@@ -5,4 +5,5 @@ spring:
     username: postgres
     password: postgres
   liquibase:
-    change-log: classpath:liquibase/db.changelog-master.xml
+    enabled: true
+    change-log: classpath:db/db.changelog-master.xml

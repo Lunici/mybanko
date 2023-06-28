@@ -1,16 +1,7 @@
 package org.mybanko.User;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "tbl_user")
-public class UserEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+public class UserDto {
     int id;
-
-    @Column(name = "username")
     String username;
 
     public int getId() {
