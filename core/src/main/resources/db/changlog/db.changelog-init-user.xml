@@ -22,24 +22,25 @@
             <column name="password" type="VARCHAR(255)"/>
             <column name="givenname" type="VARCHAR(255)"/>
             <column name="surname" type="VARCHAR(255)"/>
-            <column name="second surname" type="VARCHAR(255)"/>
-            <column name="gender" type="INT"/>
+            <column name="second_surname" type="VARCHAR(255)"/>
+            <column name="gender" type="SMALLINT" defaultValueNumeric="0"/>
             <column name="birthday" type="DATE"/>
-            <column name="id_type" type="INT"/>
-            <column name="id_number" type="VARCHAR(255)">
+            <column name="identify_document_type" type="TINYINT"/>
+            <column name="identify_document_number" type="VARCHAR(255)">
                 <constraints unique="true"/>
             </column>
             <column name="create_time" type="DATETIME"/>
-            <column name="role" type="INT"/>
+            <column name="role" type="TINYINT"/>
             <column name="iban" type="VARCHAR(34)">
                 <constraints unique="true"/>
             </column>
             <column name="bic" type="VARCHAR(11)">
                 <constraints unique="true"/>
             </column>
-            <column name="is_blocked" type="boolean" defaultValueBoolean="false">
+            <column name="status" type="TINYINT" defaultValueNumeric="0">
                 <constraints nullable="false"/>
             </column>
+            <column name="profile_image_url" type="VARCHAR(255)"/>
 
         </createTable>
     </changeSet>

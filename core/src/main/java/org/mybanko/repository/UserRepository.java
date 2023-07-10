@@ -1,5 +1,6 @@
-package org.mybanko.User;
+package org.mybanko.repository;
 
+import org.mybanko.model.User.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
